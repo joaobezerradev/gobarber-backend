@@ -1,4 +1,4 @@
-import { request, Router } from 'express';
+import { Router } from 'express';
 import { startOfHour, parseISO } from 'date-fns';
 import AppointmentsRepository from '../repository/AppointmentsRepository';
 
