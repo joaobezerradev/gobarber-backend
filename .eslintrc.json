@@ -16,7 +16,6 @@
   },
   "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
-    "camelcase":"off",
     "class-methods-use-this":"off",
     "prettier/prettier": "error",
     "import/extensions": [
