@@ -11,7 +11,7 @@ interface IRequest {
 }
 
 @injectable()
-class UpdateUserAvatarService {
+export default class UpdateUserAvatarService {
   constructor(
     @inject('UsersRepository')
     private usersRepository: IUsersRepository,
@@ -39,4 +39,3 @@ class UpdateUserAvatarService {
     return user;
   }
 }
-export default UpdateUserAvatarService;
