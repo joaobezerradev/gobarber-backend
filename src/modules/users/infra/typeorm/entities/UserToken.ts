@@ -13,7 +13,7 @@ export default class UsersToken {
   id: string;
 
   @Column()
-  @Generated()
+  @Generated('uuid')
   token: string;
 
   @Column()

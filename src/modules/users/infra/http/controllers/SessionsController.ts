@@ -1,6 +1,6 @@
+import AuthenticateUserService from '@modules/users/services/AuthenticateUserService';
 import { Request, Response } from 'express';
 
-import AuthenticateUserService from '@modules/users/services/AuthenticateService';
 import { container } from 'tsyringe';
 
 export default class SessionsController {
