@@ -1,5 +1,5 @@
 import AppError from '@shared/errors/AppError';
-import { inject } from 'tsyringe';
+import { inject, injectable } from 'tsyringe';
 import { addHours, isAfter } from 'date-fns';
 import IHashProvider from '../providers/HashProvider/models/IHashProvider';
 import IUsersRepository from '../repositories/IUsersRepository';
@@ -10,6 +10,7 @@ interface IRequest {
   token: string;
 }
 
+@injectable()
 export default class ResetPasswordService {
   constructor(
     @inject('UsersRepository')

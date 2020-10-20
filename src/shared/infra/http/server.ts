@@ -25,11 +25,13 @@ app.use((err: Error, request: Request, response: Response, _: NextFunction) => {
       .json({ status: 'Error', message: err.message });
   }
 
-  console.log(err.message);
+  console.log(err);
   return response.status(500).json({
     status: 'Error',
     message: 'Internal server error',
   });
 });
 
-app.listen(3333);
+app.listen(3333, () => {
+  console.log('Server has started at port: 3333');
+});
