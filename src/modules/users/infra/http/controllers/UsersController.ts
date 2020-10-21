@@ -13,7 +13,7 @@ export default class UserController {
       email,
       password,
     });
-
+    delete user.password;
     return response.json(user);
   }
 }
