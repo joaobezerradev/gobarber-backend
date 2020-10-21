@@ -13,7 +13,9 @@ export default class UserController {
       email,
       password,
     });
-    delete user.password;
+
+    user.password = 'Password is secret';
+
     return response.json(user);
   }
 }
